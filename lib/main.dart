@@ -15,6 +15,7 @@ class ClarioApp extends StatelessWidget {
       title: 'Clario',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        fontFamily: 'Inter',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),

@@ -7,6 +7,7 @@ class OnboardingOne extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(      
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Padding(
           padding: EdgeInsets.only(left: screenSize.width/15,right: screenSize.width/15,top: screenSize.width/35,bottom: screenSize.width/35),
