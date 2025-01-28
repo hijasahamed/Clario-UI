@@ -25,7 +25,7 @@ class OnboardingTwoScreen extends StatelessWidget {
                 IntroTextWidget(screenSize: screenSize,num: '2',title: 'Create your workspace',),
                 UserDetailsWidget(screenSize: screenSize,pageNumber: 2,),
                 SizedBox(height: screenSize.height/55,),
-                ContinueButton(screenSize: screenSize),
+                ContinueButton(screenSize: screenSize,pageNumber: 2,),
                 Expanded(child: PrivacyBarWidget(screenSize: screenSize)),
               ],
             ),

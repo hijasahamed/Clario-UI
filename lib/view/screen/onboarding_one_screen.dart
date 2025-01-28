@@ -26,7 +26,7 @@ class OnboardingOneScreen extends StatelessWidget {
                 IntroTextWidget(screenSize: screenSize,num: '1',title: 'Let’s get to you know',),
                 SingleChildScrollView(child: UserDetailsWidget(screenSize: screenSize,pageNumber: 1,)),
                 SubscribeToggle(screenSize: screenSize),
-                ContinueButton(screenSize: screenSize),
+                ContinueButton(screenSize: screenSize,pageNumber: 1,),
                 Expanded(child: PrivacyBarWidget(screenSize: screenSize)),
               ],
             ),

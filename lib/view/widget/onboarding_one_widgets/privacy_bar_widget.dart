@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class PrivacyBarWidget extends StatelessWidget {
   const PrivacyBarWidget({
     super.key,
-    required this.screenSize,
+    required this.screenSize, 
   });
 
   final Size screenSize;
@@ -20,22 +20,16 @@ class PrivacyBarWidget extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.lock_outline,color: Color(0xff808897),),
-            ),
+            Icon(Icons.lock_outline,color: Color(0xff808897),size: screenSize.width/25,),
+            SizedBox(width: screenSize.width/75),
             TextWidget(text: 'Privacy', color: Color(0xff666D80), size: screenSize.width/30, fontFamily: 'Inter', weight: FontWeight.w500),
-            const SizedBox(width: 20.0),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.description,color: Color(0xff808897),),
-            ),
+            SizedBox(width: screenSize.width/15),
+            Icon(Icons.description,color: Color(0xff808897),size: screenSize.width/25,),
+            SizedBox(width: screenSize.width/75),
             TextWidget(text: 'Terms', color: Color(0xff666D80), size: screenSize.width/30, fontFamily: 'Inter', weight: FontWeight.w500),
-            const SizedBox(width: 20.0),
-            IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.help_outline,color: Color(0xff808897),),
-            ),
+            SizedBox(width: screenSize.width/15),
+            Icon(Icons.help_outline,color: Color(0xff808897),size: screenSize.width/25,),
+            SizedBox(width: screenSize.width/75),
             TextWidget(text: 'Get help', color: Color(0xff666D80), size: screenSize.width/30, fontFamily: 'Inter', weight: FontWeight.w500),
           ],
         ),
