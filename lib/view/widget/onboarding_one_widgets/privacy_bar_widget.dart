@@ -12,7 +12,7 @@ class PrivacyBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.end,
       children: [
         SizedBox(height: screenSize.height/19),
         TextWidget(text: '© 2024 Clario', color: Color(0xff666D80), size: screenSize.width/30, fontFamily: 'Inter', weight: FontWeight.w500),

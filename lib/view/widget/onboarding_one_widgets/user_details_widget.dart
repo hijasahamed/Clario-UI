@@ -1,5 +1,5 @@
-import 'package:clario/view/widget/common_widgets/custom_textformfield.dart';
 import 'package:clario/view/widget/common_widgets/text_widget.dart';
+import 'package:clario/view/widget/onboarding_one_widgets/user_details_form_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
@@ -7,9 +7,11 @@ class UserDetailsWidget extends StatelessWidget {
   const UserDetailsWidget({
     super.key,
     required this.screenSize,
+    required this.pageNumber
   });
 
   final Size screenSize;
+  final int pageNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -50,13 +52,7 @@ class UserDetailsWidget extends StatelessWidget {
             )
           ],
         ),
-        SizedBox(height: screenSize.height/40),
-        CustomTextField(label: "First name", hintText: "John"),
-        SizedBox(height: 16),
-        CustomTextField(label: "Last name", hintText: "Doe"),
-        SizedBox(height: 16),
-        CustomTextField(label: "Email", hintText: "johndoe@mail.com"),
-        SizedBox(height: screenSize.height/70),
+        UserDetailsFormWidget(screenSize: screenSize,pageNumber: pageNumber,)
       ],
     );
   }

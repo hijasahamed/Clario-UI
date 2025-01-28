@@ -1,3 +1,4 @@
+import 'package:clario/view/screen/onboarding_two_screen.dart';
 import 'package:clario/view/widget/common_widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,10 @@ class ContinueButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => OnboardingTwoScreen(screenSize: screenSize,)),
+        );
       },
       child: Ink(
         width: screenSize.width,
