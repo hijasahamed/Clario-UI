@@ -6,7 +6,8 @@ class CustomTextField extends StatelessWidget {
   final String label;
   final String hintText;
   final int? pageNumber;
-  const CustomTextField({super.key, required this.label, required this.hintText,this.pageNumber});
+  final bool? isPasswordField;
+  const CustomTextField({super.key, required this.label, required this.hintText,this.pageNumber,this.isPasswordField});
 
   @override
   Widget build(BuildContext context) {
@@ -34,6 +35,7 @@ class CustomTextField extends StatelessWidget {
           style: const TextStyle(
               color: Color(0xFF424141), fontWeight: FontWeight.normal),
           decoration: InputDecoration(
+            suffixIcon: Icon(Icons.keyboard_arrow_down),
             hintText: hintText,
             hintStyle: TextStyle(color: Colors.black),
             contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),
@@ -54,6 +56,7 @@ class CustomTextField extends StatelessWidget {
         TextFormField(
           textCapitalization: TextCapitalization.words,
           decoration: InputDecoration(
+            suffixIcon: isPasswordField==true? Icon(Icons.visibility,color: Color(0xffA4ABB8),) : null,
             hintText: hintText,
             hintStyle: TextStyle(color: Colors.grey),
             contentPadding: EdgeInsets.symmetric(vertical: 16, horizontal: 12),

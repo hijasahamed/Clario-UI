@@ -16,30 +16,33 @@ class ContinueButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return InkWell(
-      onTap: () {
-        pageNumber==1?
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => OnboardingTwoScreen(screenSize: screenSize,)),
-        ): pageNumber==2?
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => OnboardingThreeScreen(screenSize: screenSize,)),
-        ): pageNumber==3?
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => SignInScreen(screenSize: screenSize,)),
-        ): null;
-      },
-      child: Ink(
-        width: screenSize.width,
-        padding: EdgeInsets.all(screenSize.width/30),
-        decoration: BoxDecoration(
-          color: Color(0xff104127),
-          borderRadius: BorderRadius.circular(screenSize.width/35)
+    return Material(
+      borderRadius: BorderRadius.circular(screenSize.width / 35),
+      child: InkWell(
+        onTap: () {
+          pageNumber==1?
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => OnboardingTwoScreen(screenSize: screenSize,)),
+          ): pageNumber==2?
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => OnboardingThreeScreen(screenSize: screenSize,)),
+          ): pageNumber==3?
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => SignInScreen(screenSize: screenSize,)),
+          ): null;
+        },
+        child: Ink(
+          width: screenSize.width,
+          padding: EdgeInsets.all(screenSize.width/30),
+          decoration: BoxDecoration(
+            color: Color(0xff104127),
+            borderRadius: BorderRadius.circular(screenSize.width/35)
+          ),
+          child: Center(child: TextWidget(text: 'Continue', color: Colors.white, size: screenSize.width/25, fontFamily: 'Inter', weight: FontWeight.w600)),
         ),
-        child: Center(child: TextWidget(text: 'Continue', color: Colors.white, size: screenSize.width/25, fontFamily: 'Inter', weight: FontWeight.w600)),
       ),
     );
   }
