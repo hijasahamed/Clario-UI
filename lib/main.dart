@@ -13,8 +13,9 @@ class ClarioApp extends StatelessWidget {
     final screenSize = MediaQuery.sizeOf(context);
     return MaterialApp(
       title: 'Clario',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
       home: OnboardingOne(screenSize: screenSize,),
