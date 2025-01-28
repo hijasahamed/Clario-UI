@@ -1,4 +1,4 @@
-import 'package:clario/view/screen/onboarding_one.dart';
+import 'package:clario/view/screen/onboarding_one_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,12 +14,7 @@ class ClarioApp extends StatelessWidget {
     return MaterialApp(
       title: 'Clario',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        fontFamily: 'Inter',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
-        useMaterial3: true,
-      ),
-      home: OnboardingOne(screenSize: screenSize,),
+      home: OnboardingOneScreen(screenSize: screenSize,),
     );
   }
 }

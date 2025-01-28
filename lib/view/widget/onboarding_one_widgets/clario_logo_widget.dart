@@ -10,12 +10,13 @@ class ClarioLogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SvgPicture.asset(
           'asset/image/clario_logo.svg',
           fit: BoxFit.contain,
         ),
-        SizedBox(height: screenSize.height/15,)
+        SizedBox(height: screenSize.width/10,),
       ],
     );
   }
