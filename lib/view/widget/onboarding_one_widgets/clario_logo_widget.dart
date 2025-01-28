@@ -15,6 +15,8 @@ class ClarioLogoWidget extends StatelessWidget {
         SvgPicture.asset(
           'asset/image/clario_logo.svg',
           fit: BoxFit.contain,
+          height: screenSize.width/15,
+          width: screenSize.width/15,
         ),
         SizedBox(height: screenSize.width/10,),
       ],

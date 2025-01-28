@@ -16,7 +16,7 @@ class IntroTextWidget extends StatelessWidget {
       children: [
         TextWidget(text: '1/3', color: Color(0xff666D80), size: screenSize.width/31, fontFamily: 'Inter', weight: FontWeight.w800),
         TextWidget(text: "Let’s get to you know", color: Color(0xff0D0D12), size: screenSize.width/21, fontFamily: 'Inter', weight: FontWeight.bold),
-        SizedBox(height: 15,)
+        SizedBox(height: 18,)
       ],
     );
   }

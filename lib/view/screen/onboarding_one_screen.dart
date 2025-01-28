@@ -1,7 +1,7 @@
-import 'package:clario/view/widget/common_widgets/text_widget.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/clario_logo_widget.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/continue_button.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/intro_text_widget.dart';
+import 'package:clario/view/widget/onboarding_one_widgets/privacy_bar_widget.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/subscribe_toggle.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/user_details_widget.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +25,8 @@ class OnboardingOneScreen extends StatelessWidget {
                 IntroTextWidget(screenSize: screenSize),
                 UserDetailsWidget(screenSize: screenSize),
                 SubscribeToggle(screenSize: screenSize),
-                ContinueButton(screenSize: screenSize)
+                ContinueButton(screenSize: screenSize),
+                PrivacyBarWidget(screenSize: screenSize),
               ],
             ),
           ),
