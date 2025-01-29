@@ -14,25 +14,25 @@ class SalesCardWidget extends StatelessWidget {
     return Column(
       children: [
         SalesCardHolderWidget(
-          icon: Icons.currency_exchange,
+          image: 'asset/image/coins.svg',
           title: "Total Sales",
           amount: "\$23,569.00",
           percentage: "10,5%",
-          percentageColor: Colors.green,
+          percentageColor: Color(0XFF40C4AA),
           screenSize: screenSize,
         ),
         SizedBox(height: screenSize.height * 0.02),
         SalesCardHolderWidget(
-          icon: Icons.bar_chart,
+          image: 'asset/image/bar.svg',
           title: "Avg. Sale value",
           amount: "\$12,680.00",
           percentage: "3,4%",
-          percentageColor: Colors.green,
+          percentageColor: Color(0XFF40C4AA),
           screenSize: screenSize,
         ),
         SizedBox(height: screenSize.height * 0.02),
         SalesCardHolderWidget(
-          icon: Icons.person,
+          image: 'asset/image/home person.svg',
           title: "Total Deals",
           amount: "1,204",
           percentage: "0,5%",
