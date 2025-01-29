@@ -1,3 +1,4 @@
+import 'package:clario/view/screen/home_screen.dart';
 import 'package:clario/view/screen/onboarding_three_screen.dart';
 import 'package:clario/view/screen/onboarding_two_screen.dart';
 import 'package:clario/view/screen/sign_in_screen.dart';
@@ -32,6 +33,10 @@ class ContinueButton extends StatelessWidget {
           Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => SignInScreen(screenSize: screenSize,)),
+          ): pageNumber==4?
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HomeScreen(screenSize: screenSize,)),
           ): null;
         },
         child: Ink(
