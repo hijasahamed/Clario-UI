@@ -1,3 +1,4 @@
+import 'package:clario/view/screen/home_screen.dart';
 import 'package:clario/view/screen/onboarding_one_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -20,7 +21,7 @@ class ClarioApp extends StatelessWidget {
     return MaterialApp(
       title: 'Clario',
       debugShowCheckedModeBanner: false,
-      home: OnboardingOneScreen(screenSize: screenSize,),
+      home: HomeScreen(screenSize: screenSize,),
     );
   }
 }
