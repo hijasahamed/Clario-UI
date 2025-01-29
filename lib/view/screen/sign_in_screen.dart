@@ -1,3 +1,4 @@
+import 'package:clario/view/widget/common_widgets/text_widget.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/clario_logo_widget.dart';
 import 'package:clario/view/widget/onboarding_one_widgets/privacy_bar_widget.dart';
 import 'package:clario/view/widget/sign_in_screen_widgets/login_section_widget.dart';
@@ -19,7 +20,15 @@ class SignInScreen extends StatelessWidget {
             children: [
               ClarioLogoWidget(screenSize: screenSize),
               LoginSectionWidget(screenSize: screenSize),
-              
+              Row(
+                spacing: screenSize.width/100,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(height: screenSize.height/10,),
+                  TextWidget(text: 'Don’t have an account?', color: Colors.grey.shade900, size: screenSize.width/27, fontFamily: 'Inter', weight: FontWeight.w500),
+                  TextWidget(text: 'Sign Up', color: Color(0XFF104127), size: screenSize.width/27, fontFamily: 'Inter', weight: FontWeight.w500),
+                ],
+              ),
               Expanded(child: PrivacyBarWidget(screenSize: screenSize))
             ],
           ),
